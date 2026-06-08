@@ -194,6 +194,7 @@ function go(id,btn){
     if(id==='t6')renderT6();
     if(id==='t7')renderT7();
     if(id==='t8')renderT8();
+    if(id==='t9')renderT9();
   },50);
 }
 
@@ -1238,6 +1239,14 @@ function t8RenderChart(){
 }
 
 // t9: 一方成交情绪榜单
+var _t9Inited = false;
+function renderT9(){
+  if(_t9Inited){
+    var a=echarts.getInstanceByDom(document.getElementById('t9barAmount'));
+    var p=echarts.getInstanceByDom(document.getElementById('t9barPersons'));
+    if(a)a.resize(); if(p)p.resize(); return;
+  }
+  _t9Inited=true;
 (function(){
   var amtLabels = ["欣赏感", "逗趣感", "被支持感", "期待感", "欣慰", "好感", "伤逝感", "惊喜", "愉悦", "畅爽"];
   var amtVals = [0.0, 0.0, 8910.0, 13596.0, 14850.0, 18040.0, 20625.0, 38280.0, 42900.0, 47685.0];
@@ -1294,4 +1303,5 @@ function t8RenderChart(){
   // resize handler
   window.addEventListener('resize',function(){ch9a.resize();ch9p.resize();});
 })();
+}
 </script></body></html>
