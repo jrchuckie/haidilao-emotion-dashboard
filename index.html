@@ -74,7 +74,7 @@ body{background:#0a0d14;color:#e2e8f0;font-family:'PingFang SC','Microsoft YaHei
   .mc{min-width:calc(50% - 4px)}
   .tb{padding:6px 10px;font-size:12px}
 }
-</style></head><body><div class="hd"><div><h1>🔥 UGC情绪看板</h1><div class="sub">Haidilao·海底捞&nbsp;|&nbsp;2025-06 ~ 2026-06&nbsp;|&nbsp;规则引擎 v4</div></div><div class="hd-stats"><div><div class="sv" id="s-total">-</div><div class="sl">有效打标笔记</div></div><div><div class="sv" id="s-exp">-</div><div class="sl">累计曝光量</div></div><div><div class="sv" id="s-surprise">-</div><div class="sl">惊喜曝光SOV</div></div><div><div class="sv" id="s-pos">-</div><div class="sl">核心情绪总SOV</div></div></div></div><div class="tabs"><button class="tb active" onclick="go('t1',this)">📊 情绪分布</button><button class="tb" onclick="go('t2',this)">⏱ 情绪 Over Time</button><button class="tb" onclick="go('t3',this)">🏪 竞品对比</button><button class="tb" onclick="go('t4',this)">✨ 核心情绪深挖</button><button class="tb" onclick="go('t6',this)">🔧 功能性属性</button><button class="tb" onclick="go('t7',this)">🩺 品牌诊断</button><button class="tb" onclick="go('t8',this)">📈 属性趋势</button></div><div id="t1" class="tp active"><div class="row" style="margin-bottom:0"><div class="c1"><div class="card"><div class="ct">情绪排行（曝光SOV%）</div><div id="t1barExp" style="height:500px"></div></div></div><div class="c1"><div class="card"><div class="ct">情绪排行（笔记条数）</div><div id="t1barCnt" style="height:500px"></div></div></div></div><div class="card"><div class="ct">月度笔记量 & 曝光趋势</div><div id="t1week" style="height:260px"></div></div></div><div id="t2" class="tp"><div class="card" style="margin-bottom:14px"><div class="ct">选择要展示的情绪 <span style="color:#6b7280;font-size:11px;font-weight:400">（可多选，上限8个）</span></div><div class="pact-row"><button class="pact" onclick="t2Preset('core')" style="color:#fbbf24;border-color:rgba(251,191,36,.4)">🎯 核心情绪</button><button class="pact" onclick="t2Preset('surprise')">仅惊喜</button><button class="pact" onclick="t2Preset('top5pos')">Top5正面</button><button class="pact" onclick="t2Preset('top5neg')">Top5负面</button><button class="pact" onclick="t2Preset('all')">Top8</button><span style="font-size:11px;color:#6b7280;margin-left:4px">已选：<span id="t2count" style="color:#818cf8">0</span>/8</span></div><div class="pills" id="t2pills"></div></div><div class="card"><div class="ct" style="justify-content:space-between"><span>各情绪趋势（月维度）</span><div class="mode-toggle"><button class="mt-btn" id="modeCount" onclick="setMode('count')">笔记量</button><button class="mt-btn active" id="modeRate" onclick="setMode('rate')">曝光SOV%</button><button class="mt-btn" id="modeExp" onclick="setMode('exp')">曝光M</button></div></div><div id="t2line" style="height:360px"></div></div><div class="card"><div class="ct">全情绪 × 周次 热力图（占比 %）</div><div id="t2heat" style="height:440px"></div></div></div>
+</style></head><body><div class="hd"><div><h1>🔥 UGC情绪看板</h1><div class="sub">Haidilao·海底捞&nbsp;|&nbsp;2025-06 ~ 2026-06&nbsp;|&nbsp;规则引擎 v4</div></div><div class="hd-stats"><div><div class="sv" id="s-total">-</div><div class="sl">有效打标笔记</div></div><div><div class="sv" id="s-exp">-</div><div class="sl">累计曝光量</div></div><div><div class="sv" id="s-surprise">-</div><div class="sl">惊喜曝光SOV</div></div><div><div class="sv" id="s-pos">-</div><div class="sl">核心情绪总SOV</div></div></div></div><div class="tabs"><button class="tb active" onclick="go('t1',this)">📊 情绪分布</button><button class="tb" onclick="go('t2',this)">⏱ 情绪 Over Time</button><button class="tb" onclick="go('t3',this)">🏪 竞品对比</button><button class="tb" onclick="go('t4',this)">✨ 核心情绪深挖</button><button class="tb" onclick="go('t6',this)">🔧 功能性属性</button><button class="tb" onclick="go('t7',this)">🩺 品牌诊断</button><button class="tb" onclick="go('t8',this)">📈 属性趋势</button><button class="tb" onclick="go('t9',this)">📦 一方成交</button></div><div id="t1" class="tp active"><div class="row" style="margin-bottom:0"><div class="c1"><div class="card"><div class="ct">情绪排行（曝光SOV%）</div><div id="t1barExp" style="height:500px"></div></div></div><div class="c1"><div class="card"><div class="ct">情绪排行（笔记条数）</div><div id="t1barCnt" style="height:500px"></div></div></div></div><div class="card"><div class="ct">月度笔记量 & 曝光趋势</div><div id="t1week" style="height:260px"></div></div></div><div id="t2" class="tp"><div class="card" style="margin-bottom:14px"><div class="ct">选择要展示的情绪 <span style="color:#6b7280;font-size:11px;font-weight:400">（可多选，上限8个）</span></div><div class="pact-row"><button class="pact" onclick="t2Preset('core')" style="color:#fbbf24;border-color:rgba(251,191,36,.4)">🎯 核心情绪</button><button class="pact" onclick="t2Preset('surprise')">仅惊喜</button><button class="pact" onclick="t2Preset('top5pos')">Top5正面</button><button class="pact" onclick="t2Preset('top5neg')">Top5负面</button><button class="pact" onclick="t2Preset('all')">Top8</button><span style="font-size:11px;color:#6b7280;margin-left:4px">已选：<span id="t2count" style="color:#818cf8">0</span>/8</span></div><div class="pills" id="t2pills"></div></div><div class="card"><div class="ct" style="justify-content:space-between"><span>各情绪趋势（月维度）</span><div class="mode-toggle"><button class="mt-btn" id="modeCount" onclick="setMode('count')">笔记量</button><button class="mt-btn active" id="modeRate" onclick="setMode('rate')">曝光SOV%</button><button class="mt-btn" id="modeExp" onclick="setMode('exp')">曝光M</button></div></div><div id="t2line" style="height:360px"></div></div><div class="card"><div class="ct">全情绪 × 周次 热力图（占比 %）</div><div id="t2heat" style="height:440px"></div></div></div>
 <div id="t3" class="tp">
   <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px" id="t3chips"></div>
   <div class="card">
@@ -112,6 +112,26 @@ body{background:#0a0d14;color:#e2e8f0;font-family:'PingFang SC','Microsoft YaHei
         </div>
       </div>
     </div>
+  </div>
+</div><div id="t9" class="tp">
+  <div style="color:#6b7280;font-size:11px;margin-bottom:12px;padding:8px 12px;background:rgba(251,191,36,.08);border-radius:6px;border-left:3px solid #fbbf24">📦 基于海底捞一方高转化笔记（78 条有效打标笔记）· 情绪与可归因成交指标关联分析</div>
+  <div class="row" style="margin-bottom:0">
+    <div class="c1">
+      <div class="card">
+        <div class="ct">情绪 × 可归因成交金额 Top10<span style="font-size:10px;color:#6b7280;font-weight:400;margin-left:6px">（总量）</span></div>
+        <div id="t9barAmount" style="height:500px"></div>
+      </div>
+    </div>
+    <div class="c1">
+      <div class="card">
+        <div class="ct">情绪 × 可归因成交人数 Top10<span style="font-size:10px;color:#6b7280;font-weight:400;margin-left:6px">（总量）</span></div>
+        <div id="t9barPersons" style="height:500px"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <div class="ct">明细数据</div>
+    <div id="t9table" style="overflow-x:auto"></div>
   </div>
 </div><div id="t8" class="tp">
   <div class="card">
@@ -1216,4 +1236,62 @@ function t8RenderChart(){
     series:series
   },{notMerge:true});
 }
+
+// t9: 一方成交情绪榜单
+(function(){
+  var amtLabels = ["欣赏感", "逗趣感", "被支持感", "期待感", "欣慰", "好感", "伤逝感", "惊喜", "愉悦", "畅爽"];
+  var amtVals = [0.0, 0.0, 8910.0, 13596.0, 14850.0, 18040.0, 20625.0, 38280.0, 42900.0, 47685.0];
+  var perLabels = ["伤逝感", "欣赏感", "逗趣感", "爱慕感", "期待感", "好感", "欣慰", "愉悦", "畅爽", "惊喜"];
+  var perVals = [273, 351, 404, 427, 1519, 1588, 1824, 4922, 10927, 12795];
+  
+  function fmtYuan(v){
+    if(v>=10000) return '¥'+(v/10000).toFixed(1)+'万';
+    if(v>=1000) return '¥'+(v/1000).toFixed(1)+'千';
+    return '¥'+v.toFixed(0);
+  }
+  function fmtNum(v){
+    if(v>=10000) return (v/10000).toFixed(1)+'万';
+    if(v>=1000) return (v/1000).toFixed(1)+'千';
+    return v.toLocaleString();
+  }
+  
+  // 成交金额 chart
+  var ch9a=gc('t9barAmount');
+  ch9a.setOption({
+    backgroundColor:'transparent',
+    grid:{top:10,bottom:30,left:90,right:80},
+    xAxis:{type:'value',axisLabel:{color:'#8892b0',formatter:function(v){return fmtYuan(v);}},
+      splitLine:{lineStyle:{color:'#1e2438'}},axisLine:{lineStyle:{color:'#2d3a5a'}}},
+    yAxis:{type:'category',data:amtLabels,axisLabel:{color:'#e2e8f0',fontSize:12},
+      axisLine:{lineStyle:{color:'#2d3a5a'}},axisTick:{show:false}},
+    series:[{type:'bar',data:amtVals.map(function(v,i){return{value:v,itemStyle:{color:["#4ade80", "#22d3ee", "#a78bfa", "#f59e0b", "#f97316", "#ef4444", "#ec4899", "#8b5cf6", "#6366f1", "#06b6d4"][i]}};}),
+      label:{show:true,position:'right',color:'#e2e8f0',fontSize:11,formatter:function(p){return fmtYuan(p.value);}},
+      barWidth:18}]
+  },{notMerge:true});
+
+  // 成交人数 chart
+  var ch9p=gc('t9barPersons');
+  ch9p.setOption({
+    backgroundColor:'transparent',
+    grid:{top:10,bottom:30,left:90,right:80},
+    xAxis:{type:'value',axisLabel:{color:'#8892b0',formatter:function(v){return fmtNum(v);}},
+      splitLine:{lineStyle:{color:'#1e2438'}},axisLine:{lineStyle:{color:'#2d3a5a'}}},
+    yAxis:{type:'category',data:perLabels,axisLabel:{color:'#e2e8f0',fontSize:12},
+      axisLine:{lineStyle:{color:'#2d3a5a'}},axisTick:{show:false}},
+    series:[{type:'bar',data:perVals.map(function(v,i){return{value:v,itemStyle:{color:["#4ade80", "#22d3ee", "#a78bfa", "#f59e0b", "#f97316", "#ef4444", "#ec4899", "#8b5cf6", "#6366f1", "#06b6d4"][i]}};}),
+      label:{show:true,position:'right',color:'#e2e8f0',fontSize:11,formatter:function(p){return fmtNum(p.value);}},
+      barWidth:18}]
+  },{notMerge:true});
+
+  // 明细表格
+  var allData = [{"emotion": "畅爽", "amount": 47685.0, "persons": 10927, "note_cnt": 21}, {"emotion": "愉悦", "amount": 42900.0, "persons": 4922, "note_cnt": 5}, {"emotion": "惊喜", "amount": 38280.0, "persons": 12795, "note_cnt": 22}, {"emotion": "伤逝感", "amount": 20625.0, "persons": 273, "note_cnt": 2}, {"emotion": "好感", "amount": 18040.0, "persons": 1588, "note_cnt": 3}, {"emotion": "欣慰", "amount": 14850.0, "persons": 1824, "note_cnt": 5}, {"emotion": "期待感", "amount": 13596.0, "persons": 1519, "note_cnt": 8}, {"emotion": "被支持感", "amount": 8910.0, "persons": 227, "note_cnt": 1}, {"emotion": "逗趣感", "amount": 0.0, "persons": 404, "note_cnt": 1}, {"emotion": "欣赏感", "amount": 0.0, "persons": 351, "note_cnt": 2}];
+  var th='<tr style="border-bottom:1px solid #2d3a5a"><th style="text-align:left;padding:8px 12px;color:#8892b0;font-size:12px">情绪</th><th style="text-align:right;padding:8px 12px;color:#8892b0;font-size:12px">可归因成交金额</th><th style="text-align:right;padding:8px 12px;color:#8892b0;font-size:12px">可归因成交人数</th><th style="text-align:right;padding:8px 12px;color:#8892b0;font-size:12px">笔记数</th></tr>';
+  var rows=allData.map(function(d){
+    return '<tr style="border-bottom:1px solid #1e2438"><td style="padding:8px 12px;font-size:12px">'+d.emotion+'</td><td style="padding:8px 12px;text-align:right;font-size:12px;color:#fbbf24">¥'+d.amount.toLocaleString()+'</td><td style="padding:8px 12px;text-align:right;font-size:12px">'+d.persons.toLocaleString()+'</td><td style="padding:8px 12px;text-align:right;font-size:12px">'+d.note_cnt+'</td></tr>';
+  }).join('');
+  document.getElementById('t9table').innerHTML='<table style="width:100%;border-collapse:collapse;font-family:inherit">'+th+rows+'</table>';
+
+  // resize handler
+  window.addEventListener('resize',function(){ch9a.resize();ch9p.resize();});
+})();
 </script></body></html>
